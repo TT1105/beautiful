@@ -1,0 +1,44 @@
+<!--pages/inputUser.wxml-->
+<view>
+  <i-panel title="立即预约">
+    <i-input value="{{ name }}" bind:change="setName" title="姓名"  placeholder="名字" maxlength="50"  />
+    <i-input value="{{ phone }}" type="number" bind:change="setPhone" title="联系电话"maxlength="50" placeholder="请输入手机号" />
+    <i-input value="{{ address }}" type="textarea" bind:change="setAddress" title="详细地址" placeholder="请输入详细地址(最多50字)" maxlength="50" />
+    <view class="section">
+  <picker mode="date" value="{{date}}" start="2015-09-01" end="2017-09-01" bindchange="bindDateChange">
+    <view class="picker">
+      请选择日期: 
+      <text>{{date}}</text>
+    </view>
+  </picker>
+</view>
+
+<view class="section">
+  <picker mode="time" value="{{time}}"  bindchange="bindTimeChange">
+    <view class="picker">
+      请选择时间:
+      <text>{{time}}</text>
+    </view>
+  </picker>
+</view>
+    <i-input value="{{ beizhu }}"  bind:change="setBeiZhu" title="备注" maxlength="50" />
+    <view style="text-align: center;margin:20rpx ;color: rgb(90, 90, 90);">我方承诺本信息仅作为预约联系使用</view>
+    <view style="text-align: center;">
+    
+        <label class="radio" style="margin:0 auto;">
+           <i-checkbox  bindchange="checkboxChange" value="我同意提交预约信息" checked="{{isChecked}}"/>
+         </label>
+    </view>
+    
+</i-panel>
+
+<button bindtap="handleClick" type="success" shape="circle">马上预约</button>
+<i-modal title="请确认是否预约" visible="{{ isSubmit }}"  bind:ok="handleCloseOk" bind:cancel="handleCloseErr">
+<view>姓名：{{name}}</view>
+<view>电话：{{phone}}</view>
+<view>地址：{{address}}</view>
+<view>预约时间：{{date}}{{time}}</view>
+<view>备注：{{beizhu}}</view>
+</i-modal>
+
+</view>

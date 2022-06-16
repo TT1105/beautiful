@@ -1,0 +1,13 @@
+<i-card wx:for="{{orderList}}" title="{{item.name}}" thumb="https://i.loli.net/2017/08/21/599a521472424.jpg">
+    <view slot="content">
+			<view>电话：{{item.phone}}</view>
+			<view>地址：{{item.address}}</view>
+			<view>时间：{{item.date + '  '+ item.time}}</view>
+		</view>
+    <view slot="footer">备注：{{item.beizhu==''?'无':item.beizhu}}</view>
+</i-card>
+
+
+
+
+

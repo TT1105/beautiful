@@ -1,0 +1,51 @@
+<!--pages/inputUser.wxml-->
+<view>
+  <!--pages/mypage/mypage.wxml-->
+<!-- 背景图 -->
+<view class="bg-box">
+	<image src="https://beautiful-1308012383.cos.ap-chongqing.myqcloud.com/meiJia.jpg"></image>
+</view>
+
+
+<!-- 服务 -->
+<view class="service_box">
+	<view class="service_title">服务</view>
+	<view class="service_row">
+		<view class="service_icon">
+			<image src="../../images/shop.png"></image>
+		</view>
+		<view class="service_text"><button bindtap="goMycollection" style="color:black;height:35px;line-height:35px;font-weight: lighter;padding:0;width:100%;border:none;background:#fff;font-size:14px;text-align:left;">商家预约<text style="font-size: 16rpx;">这是商家查看预约的喔，小主略过~~</text></button></view>
+    
+	</view>
+<!-- 
+  <view class="service_row">
+		<view class="service_icon ">
+			<image src="../../images/test.jpg"></image>
+		</view>
+		<view class="service_text">
+			<button bindtap="calling" style="color:black;height:35px;line-height:35px;font-weight: lighter;padding:0;width:100%;border:none;background:#fff;font-size:14px;text-align:left;">商家补货</button>
+		</view>
+	</view> -->
+
+	<view class="service_row">
+		<view class="service_icon ">
+			<image src="../../images/phone.png"></image>
+		</view>
+		<view class="service_text">
+			<button bindtap="calling" style="color:black;height:35px;line-height:35px;font-weight: lighter;padding:0;width:100%;border:none;background:#fff;font-size:14px;text-align:left;">电话预约</button>
+		</view>
+	</view>
+
+	<!-- <view  class="service_row" bindtap="exit">
+        <view class="service_icon">
+            <image src="../../images/meiJia.jpg"></image>
+        </view>
+        <view class="service_text">退出登录</view>
+    </view> -->
+</view>
+
+   <i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange" fixed> 
+    <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="indexMe" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
+</view>

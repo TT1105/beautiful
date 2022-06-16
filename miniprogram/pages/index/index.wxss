@@ -1,0 +1,31 @@
+/**index.wxss**/
+
+page {
+  background-color: #f6f6f6;
+  padding-bottom: 120rpx;
+}
+
+.newsBox{
+  background-color: #ffffff;
+  margin:1rem;
+  text-align: center;
+  padding: 1rem 0;
+}
+.newsBox image {
+  margin: 0 auto;
+  text-align: center;
+}
+.newsBox .newsboxContent{
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 2rem 0.5rem 2rem;
+}
+.swiper{
+  height: 430rpx;
+}
+swiper{
+  height: 430rpx;
+}
+.swiper-item image{
+  width: 100%;
+}

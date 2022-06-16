@@ -1,0 +1,20 @@
+/* pages/inputUser.wxss */
+image{
+  width: 100%;
+}
+button{
+  background-color: #19BE6B;
+  color: #ffffff;
+  margin-top: 40rpx;
+}
+.section{
+  width: 100%;
+  background-color: #ffffff;
+  padding: 20rpx;
+}
+.picker text{
+  height: 100%;
+  display: inline-block;
+  width: 50%;
+  border: 1px solid #ccc;
+}

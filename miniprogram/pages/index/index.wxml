@@ -1,0 +1,46 @@
+<!--index.wxml-->
+<view>
+  <view class="page-body">
+    <view class="page-section page-section-spacing swiper">
+      <swiper indicator-dots="{{indicatorDots}}"
+        autoplay interval="{{interval}}" duration="{{duration}}">
+        <block>
+          <swiper-item>
+            <view class="swiper-item">
+              <image src="https://beautiful-1308012383.cos.ap-chongqing.myqcloud.com/banner1.jpg"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item">
+              <image src="https://beautiful-1308012383.cos.ap-chongqing.myqcloud.com/banner2.jpg"></image>
+            </view>
+          </swiper-item>
+          <swiper-item>
+            <view class="swiper-item">
+              <image src="https://beautiful-1308012383.cos.ap-chongqing.myqcloud.com/banner3.jpg"></image>
+            </view>
+          </swiper-item>
+        </block>
+      </swiper>
+    </view>
+    </view>
+  <i-notice-bar icon="systemprompt" loop>
+    今日特大活动：最新上新，速来预约体验
+</i-notice-bar>
+
+<view class="newsBox" bindtap="toMorePage">
+<image src="https://beautiful-1308012383.cos.ap-chongqing.myqcloud.com/today.jpg"></image>
+    <view class="newsboxContent">
+      <text>（更多款式请移步朋友圈，蟹蟹~~）</text>
+     <text><i-icon type="enter" size="28" color="#80848f" /></text> 
+    </view>
+</view>
+
+  <button type="primary" bindtap="toYuYuePage">立即预约</button>
+
+<i-tab-bar current="{{ current }}" color="#f759ab" bindchange="handleChange" fixed> 
+  <i-tab-bar-item key="index" icon="homepage" current-icon="homepage_fill" title="首页"></i-tab-bar-item>
+    <i-tab-bar-item key="indexMe" icon="mine" current-icon="mine_fill" title="我的"></i-tab-bar-item>
+</i-tab-bar>
+
+</view>

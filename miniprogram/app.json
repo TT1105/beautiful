@@ -1,0 +1,30 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/inputUser/inputUser",
+    "pages/order/order",
+    "pages/today/today",
+    "pages/indexMe/indexMe"
+  ],
+  "window": {
+    "backgroundColor": "#F6F6F6",
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#F6F6F6",
+    "navigationBarTitleText": "指尖诱惑",
+    "navigationBarTextStyle": "black"
+  },
+  "sitemapLocation": "sitemap.json",
+  "style": "v2",
+  "component": true,
+  "usingComponents": {
+    "i-tab-bar": "./dist/tab-bar/index",
+    "i-tab-bar-item": "./dist/tab-bar-item/index",
+    "i-notice-bar": "./dist/notice-bar/index",
+    "i-icon": "./dist/icon/index",
+    "i-input": "./dist/input/index",
+    "i-button": "./dist/button/index",  
+    "i-modal": "../dist/modal/index",
+    "i-card": "./dist/card/index",
+    "i-checkbox": "./dist/checkbox/index"
+  }
+}
