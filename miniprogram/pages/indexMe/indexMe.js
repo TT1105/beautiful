@@ -13,7 +13,7 @@ Page({
     // 一键拨号
     calling: function() {
       wx.makePhoneCall({
-      phoneNumber: '15025391850',
+      phoneNumber: '18875263557',
       success: function() {
       console.log("拨打电话成功！")
       },
